@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keen Plucky | طهورا احدی</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.webp" alt="Keen Plucky Logo" class="logo">
+        <nav>
+            <a href="#" onclick="switchLang('fa')">فارسی</a> |
+            <a href="#" onclick="switchLang('en')">English</a>
+        </nav>
+    </header>
+    <main>
+        <section id="about-fa">
+            <h1>درباره‌ی طهورا احدی</h1>
+            <p>
+                طهورا احدی، متولد ۲۶ نوامبر ۲۰۰۱ در شمیرانات تهران، از سن سه‌سالگی نقاشی را آغاز کرد. او با ذهنی پر از داستان، تلاش می‌کرد با نقاشی داستان‌هایش را بیان کند و در ادامه در نویسندگی نیز شکوفا شد. کتاب‌های «بال‌های من» و «دست ویرانگر» از آثار چاپ‌شده‌ی او هستند. نمایشنامه‌ی «رز آبی» نیز به قلم او در جشنواره‌ی فجر نوشته شد. سبک هنری‌اش تلفیقی از سورئال، امپرسیونیسم و کوبیسم است که اغلب موضوعاتی فلسفی یا داستانی دارد. او رتبه‌ی یک کنکور عملی هنر را در سال ۱۳۹۹ کسب کرد. طهورا هنر را وسیله‌ای برای تعالی روح می‌داند و معتقد است «نقاشان رازهای کاغذ و بوم را فاش می‌کنند».
+            </p>
+        </section>
+        <section id="about-en" style="display:none;">
+            <h1>About Tahoura Ahadi</h1>
+            <p>
+                Tahoura Ahadi, born on November 26, 2001 in Shemiranat, Tehran, started drawing at the age of three. With a storyteller’s soul, she initially expressed her thoughts through drawings before becoming literate and publishing her own books—“My Wings” and “The Destroying Hand.” She also wrote the play “Blue Rose” for the Fajr Festival. Her painting style is a unique blend of surrealism, impressionism, and cubism, often focused on philosophical or narrative themes. In 2020, she ranked first in Iran’s national practical art entrance exam. To her, art is a tool for spiritual elevation, and she believes “painters reveal the secrets of paper and canvas.”
+            </p>
+        </section>
+        <section class="artwork">
+            <h2>یکی از آثار من | One of My Artworks</h2>
+            <img src="artwork.jpg" alt="Artwork by Keen Plucky">
+        </section>
+        <footer>
+            <p>Social: 
+                <a href="https://instagram.com/keenplucky_art" target="_blank">Instagram</a> | 
+                <a href="https://facebook.com/keenplucky_art" target="_blank">Facebook</a> | 
+                <a href="https://youtube.com/@keenplucky_art" target="_blank">YouTube</a>
+            </p>
+        </footer>
+    </main>
+    <script>
+        function switchLang(lang) {
+            document.getElementById('about-fa').style.display = (lang === 'fa') ? 'block' : 'none';
+            document.getElementById('about-en').style.display = (lang === 'en') ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
